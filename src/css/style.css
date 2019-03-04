@@ -62,6 +62,8 @@ img {
   display: flex;
   flex-direction: column;
   text-align: end;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 /* line 13, D:/Академия верстки/projects/webstart/src/sass/blocks/_navbar.sass */
