@@ -61,6 +61,7 @@ img {
 .navbar__address {
   display: flex;
   flex-direction: column;
+  text-align: end;
 }
 
 /* line 13, D:/Академия верстки/projects/webstart/src/sass/blocks/_navbar.sass */
