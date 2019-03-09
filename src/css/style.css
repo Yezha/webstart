@@ -45,7 +45,7 @@ img {
 .button:hover {
   background: #d1e231;
   color: #333333;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #d1e231;
   border: none;
   outline: none;
@@ -78,7 +78,7 @@ img {
 }
 
 .button {
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #ffd200;
   border: none;
   padding: 18px 30px;
