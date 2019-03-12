@@ -359,6 +359,9 @@ img {
 }
 
 .offer__title {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
   min-width: 360px;
   line-height: 35px;
   margin-bottom: 24px;
@@ -403,6 +406,12 @@ img {
   .offer-block {
     width: 100%;
     padding-right: 0;
+  }
+  .offer-title {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
   }
 }
 /*# sourceMappingURL=style.css.map */
