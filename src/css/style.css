@@ -15,6 +15,11 @@
   font-style: normal;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
@@ -42,46 +47,36 @@ img {
   }
 }
 
-.button:hover {
-  background: #d1e231;
-  color: #333333;
-  border-radius: 5px;
-  background-color: #d1e231;
-  border: none;
-  outline: none;
-}
-
-body {
-  font-family: sans-serif;
-}
-
-img {
-  max-width: 100%;
-}
-
-.container {
-  width: 1170px;
-  margin: auto;
-}
-
-@media (max-width: 1200px) {
-  .container {
-    width: 760px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    max-width: 580px;
-    width: 90%;
-  }
-}
-
 .button {
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #ffd200;
   border: none;
   padding: 18px 30px;
+}
+
+.button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  font-size: 24px;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 16px;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 20px 25px;
+  font-size: 15px;
+  border-radius: 10px;
 }
 
 /* Импорт стилей шапки */
@@ -140,7 +135,7 @@ img {
 }
 
 @media (max-width: 768px) {
-  .navbar__contactss {
+  .navbar__contacts {
     display: none;
   }
   .navbar__button {
@@ -211,7 +206,8 @@ img {
     display: none;
   }
   .navbar__button {
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 10px;
     padding: 15px 26px;
   }
   .navbar__logo {
@@ -238,7 +234,7 @@ img {
 .hero-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-right: 140px;
+  padding-right: 100px;
 }
 
 .hero-text__title {
@@ -270,6 +266,10 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 25px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .hero-list__image {
@@ -312,11 +312,13 @@ img {
 
 @media (max-width: 768px) {
   .hero-text__title {
-    font-size: 24px;
     line-height: 1.4;
     margin: 0;
+    font-size: 24px;
+    font-weight: 400;
   }
   .hero-text__subtitle {
+    line-height: 1.4;
     font-size: 16px;
     margin: 13px 0px 28px;
   }
@@ -329,6 +331,78 @@ img {
   .hero-list__image {
     margin-right: 15px;
     min-width: 40px;
+  }
+}
+
+/* Стили для блока offer */
+.offer {
+  background: url(../img/offer/offer-bg.png) no-repeat;
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  min-width: 360px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+
+.offer__subtitle {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
