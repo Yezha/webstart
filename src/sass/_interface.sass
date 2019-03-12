@@ -1,3 +1,5 @@
+*
+  box-sizing: border-box
 body
   +reg
 img
@@ -12,31 +14,25 @@ img
   .container
     max-width: 580px
     width: 90%
-
-.button:hover
-  background: #d1e231
-  color: #333333  
-  border-radius: 5px
-  background-color: #d1e231
-  border: none
-  outline: none
-body
-  font-family: sans-serif
-img
-  max-width: 100%
-.container 
-  width: 1170px
-  margin: auto
-@media (max-width: 1200px)  
-  .container
-    width: 760px
-@media (max-width: 768px)  
-  .container
-    max-width: 580px
-    width: 90%
-
 .button
-  border-radius: 5px
+  border-radius: 10px
   background-color: $main-color
   border: none
   padding: 18px 30px
+  &:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
+.section
+  padding: 90px 0
+
+  &-title
+    font-size: 24px
+  &-subtitle
+    display: block
+    font-size: 16px
+.input
+  display:
+  border: 1px solid $border-input
+  padding: 20px 25px 
+  font-size: 15px
+  border-radius: 10px 
