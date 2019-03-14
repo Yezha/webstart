@@ -64,12 +64,21 @@ img {
 }
 
 .section-title {
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 0.4;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .section-subtitle {
   display: block;
   font-size: 16px;
+}
+
+.section-text {
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .input {
@@ -359,11 +368,8 @@ img {
 }
 
 .offer__title {
-  display: block;
-  font-size: 18px;
-  font-weight: 400;
-  min-width: 360px;
-  line-height: 35px;
+  max-width: 310px;
+  line-height: 24px;
   margin-bottom: 24px;
 }
 
@@ -386,6 +392,41 @@ img {
   min-height: 70px;
 }
 
+.offer__text {
+  max-width: 240px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.call-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.call__recall {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.call__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .offer {
     background-size: cover;
@@ -395,7 +436,10 @@ img {
     margin-bottom: 10px;
   }
   .offer__button {
-    font-size: 13px;
+    white-space: pre-wrap;
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 17px;
   }
 }
 
@@ -410,8 +454,15 @@ img {
   .offer-title {
     font-size: 18px;
     font-weight: 400;
-    font-family: 'Museo Sans Bold', sans-serif;
-    font-weight: 700;
+    display: block;
+  }
+  .offer-button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  .section {
+    padding: 53px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
