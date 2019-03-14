@@ -15,12 +15,9 @@
     width: 50%
     padding-right: 90px
     position: relative
-  &__title
-    display: block
-    font-size: 18px
-    font-weight: 400
-    min-width: 360px
-    line-height: 35px
+  &__title   
+    max-width: 310px
+    line-height: 24px
     margin-bottom: 24px
   &__subtitle
     max-width: 250px
@@ -33,14 +30,25 @@
   &__button
     width: 100%
     min-height: 70px
+  &__text
+    max-width: 240px
+    display: inline-block
+    font-size: 16px
+  &__text
+    display: flex
+    justify-content: space-between
+    text-align: center
 @media (max-width: 1200px)
   .offer
     background-size: cover
-    &__input
+    &__input     
       width: 100%
       margin-bottom: 10px
     &__button
-      font-size: 13px
+      white-space: pre-wrap
+      font-weight: 400
+      line-height: 18px
+      font-size: 17px
 @media (max-width: 768px)
   .offer
     background: #fff
@@ -50,4 +58,10 @@
     &-title
       font-size: 18px
       font-weight: 400
-      +bold
+      display: block
+    &-button
+      font-size: 14px
+      font-weight: 400
+      line-height: 18px  
+  .section
+    padding: 53px 0
