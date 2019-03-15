@@ -472,6 +472,7 @@ img {
   }
   .offer__number {
     margin: 0;
+    display: block;
   }
   .call-block {
     margin: 0;
