@@ -12,11 +12,12 @@
     left: 0
     background-color: #fff
   &__name
-  
-  &__recall
     
+  &__recall
+    margin-left: 10px
   &__number
-    +bold
+    margin-left: 10px
+    +bold  
   &-block
     width: 50%
     padding-right: 90px
@@ -39,22 +40,18 @@
     width: 100%
     min-height: 70px
     +bold
-.call
-  &__name
-    max-width: 140px
-    float: left
-    width: 50%
-    
-    font-weight: 400
-    line-height: 24px
-    display: inline
-  &__recall
-    text-align: right
+.call 
   &-block
-    font-size: 15px
-    width: 45%
+    margin-top: 31px
+    font-size: 17px
+    width: 230px
     display: inline-block
-    margin: auto
+    margin-left: 30px
+  &-name 
+    margin-top: 31px
+    font-size: 15px
+    width: 230px
+    display: inline-block
 @media (max-width: 1200px)
   .offer
     background-size: cover
