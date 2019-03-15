@@ -407,6 +407,7 @@ img {
 }
 
 .call-block {
+  margin-top: 31px;
   font-size: 17px;
   width: 230px;
   display: inline-block;
@@ -414,6 +415,7 @@ img {
 }
 
 .call-name {
+  margin-top: 31px;
   font-size: 15px;
   width: 230px;
   display: inline-block;
@@ -452,6 +454,15 @@ img {
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
+  }
+  .offer__recall {
+    margin: 0;
+  }
+  .offer__number {
+    margin: 0;
+  }
+  .call-block {
+    margin: 0;
   }
   .section {
     padding: 53px 0;
