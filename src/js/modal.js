@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
   var button = $('#button');
   var modal = $('#modal');
   var close = $('#close');
