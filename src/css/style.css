@@ -613,6 +613,12 @@ img {
       flex-wrap: wrap;
 }
 
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
 /* Стили для блока 5 шагов до ремонта */
 .step {
   -ms-flex-preferred-size: 20%;
