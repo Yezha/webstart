@@ -521,6 +521,7 @@ img {
 @media (max-width: 768px) {
   .portfolio__title {
     font-size: 20px;
+    margin-bottom: 41px;
   }
 }
 
