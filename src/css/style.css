@@ -518,6 +518,12 @@ img {
   margin: auto;
 }
 
+@media (max-width: 768px) {
+  .portfolio__title {
+    font-size: 20px;
+  }
+}
+
 /* Стили для блока с ценами */
 .price__title {
   margin: auto;
