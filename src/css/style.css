@@ -26,6 +26,7 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
@@ -64,10 +65,10 @@ img {
 }
 
 .section-title {
-  font-size: 27px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 1.4;
-  max-width: 600px;
+  max-width: 700px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   text-align: center;
@@ -617,6 +618,13 @@ img {
   .card {
     width: 100%;
   }
+  .card__text {
+    font-size: 13px;
+  }
+  .price__title {
+    font-size: 19px;
+    margin-bottom: 27px;
+  }
 }
 
 /* Стили для блока 5 шагов до ремонта */
@@ -689,6 +697,9 @@ img {
   }
   .step:after {
     display: none;
+  }
+  .steps__title {
+    font-size: 18px;
   }
   .steps-block {
     -webkit-box-orient: vertical;
