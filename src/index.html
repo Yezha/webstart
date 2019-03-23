@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
   <link rel="stylesheet" href="css/style.css">
+  
 </head>
 <body>
   <nav class="navbar">
@@ -235,7 +236,7 @@
       <!-- /.section-subtitle steps__subtitle -->
       <div class="steps-block">
         <div class="step ">
-          <div class="step__image wow rollIn" data-wow-delay="0.1s">
+          <div class="step__image wow rollIn" data-wow-delay="0.5s">
             <img src="img/steps/woman-with-headset.png" alt="">
           </div>
           <!-- /.step__image -->
@@ -244,7 +245,7 @@
         </div>
         <!-- /.step -->
         <div class="step">
-          <div class="step__image wow rollIn" data-wow-delay="0.2">
+          <div class="step__image wow rollIn" data-wow-delay="1s">
             <img src="img/steps/wall-clock.png" alt="">
           </div>
           <!-- /.step__image -->
@@ -253,7 +254,7 @@
         </div>
         <!-- /.step -->
         <div class="step">
-          <div class="step__image wow rollIn" data-wow-delay="0.3">
+          <div class="step__image wow rollIn" data-wow-delay="1.3s">
             <img src="img/steps/money.png" alt="">
           </div>
           <!-- /.step__image -->
@@ -262,7 +263,7 @@
         </div>
         <!-- /.step -->
         <div class="step">
-          <div class="step__image wow rollIn" data-wow-delay="0.4">
+          <div class="step__image wow rollIn" data-wow-delay="1.5s">
             <img src="img/steps/folded-document-icon.png" alt="">
           </div>
           <!-- /.step__image -->
@@ -271,7 +272,7 @@
         </div>
         <!-- /.step -->
         <div class="step">
-          <div class="step__image wow rollIn" data-wow-delay="0.5">
+          <div class="step__image wow rollIn" data-wow-delay="1.8s">
             <img src="img/steps/calendar.png" alt="">
           </div>
           <!-- /.step__image -->
@@ -285,6 +286,51 @@
     <!-- /.container -->
   </section>
   <!-- /.section steps -->
+
+<section class="section brif">
+  <div class="container">
+    <div class="brif-block">
+      <div class="interview brif_interview">
+        <h3 class="interview__title">Мы можем озвучить Вам примерную стоимость работы и материалов по телефону</h3>
+        <span class="interview__subtitle">Для этого нужно ответить на 4 вопроса:</span>
+        <ul class="interview-list">
+          <li class="interview-list__item">
+            <span class="interview-list__counter">1</span>
+            <span class="interview-list__text">Какова площадь помещения?</span>
+          </li>
+          <li class="interview-list__item">
+            <span class="interview-list__counter">2</span>
+            <span class="interview-list__text">У Вас новостройка или вторичное жилье?</span>
+          </li>
+          <li class="interview-list__item">
+            <span class="interview-list__counter">3</span>
+            <span class="interview-list__text">Где находится помещение, в котором будет производиться ремонт?</span>
+          </li>
+          <li class="interview-list__item">
+            <span class="interview-list__counter">4</span>
+            <span class="interview-list__text">Назначение помещения?</span>
+          </li>
+        </ul>
+      </div>
+      <!-- /.interview brif_interview -->
+  <div class="form brif__form">
+     <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3> 
+    <span class="form__subtitle">Для этого заполните форму ниже</span>
+    <form action="#" id="brif-form">
+    <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
+    <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
+    <input type="email" name="email" class="input brif__input" placeholder="Ваш email">
+    <button class="button brif__button">Узнать стоимость</button>
+    <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
+    </form>  
+  </div>
+      <!-- /.form brif__form -->
+    </div>
+    <!-- /.brif-block -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.section brif -->
 
   <!-- /.offer -->
 </main>
@@ -307,11 +353,52 @@
 <script src="js/modal.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+
 <script>
+  
+  
+
   // Иницализация WOW.js
   new WOW().init();
-  // скрипт нашего слайдера
-  $(document).ready(function()  {
+  $(document).ready(function() {
+    // Валидация формы
+    $(function(){
+    $('#brif-form').validate({
+      rules: {
+        username: {
+        required: true, 
+        minlength: 2,
+        },
+        email:{
+          required: true,
+          email: true 
+        },
+        phone: {
+          required: true,
+        }
+      },
+      messages: {
+        username: {
+          required: "Заполните поле",
+          minlength: "Введите не менее 2-х символов в поле",
+
+          },
+          email: {
+          required: "Заполните поле",
+          email: "Введите корректный email"
+          },
+          phone: {
+          required: "Заполните поле",
+          phone: "Введите корректный номер"
+        }
+      }
+    });
+  });
+   // Маска для телефона
+   $('.phone').mask('+7 (999) 999-99-99');
+   // скрипт нашего слайдера
     $('.slider').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
