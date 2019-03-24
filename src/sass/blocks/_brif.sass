@@ -8,10 +8,10 @@
   &__interview
     flex-basis: 50%
   &__form
-    padding-left: 200px
     flex-basis: 50%
     text-align: center
   &__input
+    outline: none
     width: 100%
     max-width: 370px
     margin-bottom: 15px
@@ -67,8 +67,8 @@
      
 @media (max-width: 1200px)  
   .brif
-    &__form
-      padding-left: 30px
+    &__input
+      flex-direction: column
   .interview
     padding-right: 10px
     &__title
@@ -79,7 +79,7 @@
     &-list
       &__text
         font-size: 14px
-        max-width: 300px
+        max-width: 192px
       &__counter
         margin-right: 20px 
   .form
@@ -97,4 +97,6 @@
     &-block
       flex-direction: column
     &__form
-      margin-top: 90px
+      margin-top: 60px
+     
+      

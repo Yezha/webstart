@@ -11,6 +11,8 @@ img
 @media (max-width: 1200px)  
   .container
     width: 760px
+  .input
+    width: 100%
 @media (max-width: 768px)  
   .container
     max-width: 580px
@@ -42,7 +44,6 @@ img
     font-size: 15px
     font-weight: 400
 .input
-  display:
   border: 1px solid $border-input
   padding: 20px 25px 
   font-size: 15px
@@ -53,6 +54,8 @@ img
       cursor: pointer
 input.error
   border: 1px solid #ff0000
-div.label
+label
   color: $text-color
   font-weight: normal
+  white-space: pre
+  display: block
