@@ -771,7 +771,6 @@ label {
 }
 
 .brif__form {
-  padding-left: 200px;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   text-align: center;
@@ -867,9 +866,6 @@ label {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .brif__form {
-    padding-left: 30px;
   }
   .interview {
     padding-right: 10px;
