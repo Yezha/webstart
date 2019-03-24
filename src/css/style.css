@@ -110,6 +110,7 @@ label {
   color: #333333;
   font-weight: normal;
   white-space: pre;
+  display: block;
 }
 
 /* Импорт стилей шапки */
@@ -900,7 +901,7 @@ label {
   .brif {
     background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
-    background-size: 100% 43%, cover;
+    background-size: 100% 47%, cover;
     background-repeat: repeat-x, no-repeat;
   }
   .brif-block {
