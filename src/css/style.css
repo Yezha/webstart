@@ -39,6 +39,9 @@ img {
   .container {
     width: 760px;
   }
+  .input {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -103,9 +106,10 @@ input.error {
   border: 1px solid #ff0000;
 }
 
-div.label {
+label {
   color: #333333;
   font-weight: normal;
+  white-space: pre;
 }
 
 /* Импорт стилей шапки */
@@ -418,6 +422,7 @@ div.label {
 }
 
 .offer__input {
+  outline: none;
   margin-bottom: 30px;
   width: 240px;
 }
@@ -772,6 +777,7 @@ div.label {
 }
 
 .brif__input {
+  outline: none;
   width: 100%;
   max-width: 370px;
   margin-bottom: 15px;
@@ -855,6 +861,12 @@ div.label {
 }
 
 @media (max-width: 1200px) {
+  .brif__input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .brif__form {
     padding-left: 30px;
   }
@@ -870,7 +882,7 @@ div.label {
   }
   .interview-list__text {
     font-size: 14px;
-    max-width: 300px;
+    max-width: 192px;
   }
   .interview-list__counter {
     margin-right: 20px;
@@ -888,7 +900,7 @@ div.label {
   .brif {
     background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
-    background-size: 100% 50%, cover;
+    background-size: 100% 43%, cover;
     background-repeat: repeat-x, no-repeat;
   }
   .brif-block {
@@ -898,8 +910,66 @@ div.label {
             flex-direction: column;
   }
   .brif__form {
-    margin-top: 90px;
+    margin-top: 60px;
   }
+}
+
+/* Стили для блока футер */
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+.contacts__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 45px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 30px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 40px;
 }
 
 /* Стили модального окна */
