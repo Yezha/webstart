@@ -1013,9 +1013,10 @@ label {
   }
   .contacts-list {
     max-width: 70%;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
   }
   .contacts__title {
+    margin-top: 50px;
     margin-bottom: 40px;
     font-size: 18px;
     max-width: 240px;
